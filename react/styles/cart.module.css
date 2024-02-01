@@ -1,0 +1,44 @@
+ul.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: auto;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.product {
+  flex: 1;
+  background: #ffab00;
+  max-height: 35%;
+  overflow-y: auto;
+}
+
+.cart {
+  flex: 1;
+  background: #1de9b6;
+  max-height: 35%;
+  overflow-y: auto;
+}
+
+.w-400 {
+  width: 400px;
+}

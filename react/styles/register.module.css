@@ -1,0 +1,52 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+.form{
+  width: 30%;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.error{
+  color: red;
+}
+
+.select{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgot {
+  color: default;
+}
+
+.register {
+  color:accent;
+  cursor: pointer;
+}
+
+.button{
+  margin: auto;
+  }
+
+  .qi{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 30px;
+
+    border-radius: 50%;
+    background-color: default;
+    cursor: pointer;
+  }
+
+  .input{
+    margin: 40px 0 10px 0;
+  }

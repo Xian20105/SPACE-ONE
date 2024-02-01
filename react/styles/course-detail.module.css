@@ -1,0 +1,368 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+/* ---------------全部--------------- */
+.main {
+  
+}
+/* 標題 */
+.t2En {
+  font-size: 30px;
+}
+.p4 {
+  font-size: 24px;
+}
+.p5 {
+  font-size: 20px;
+}
+.p6 {
+  font-size: 16px;
+  line-height: 28px;
+}
+.h2 {
+  font-size: 32px;
+}
+.h3 {
+  font-size: 28px;
+  margin: 120px 0 40px;
+}
+.h4 {
+  font-size: 24px;
+}
+.h5 {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.t2En {
+  font-size: 36px;
+}
+.t4En {
+  font-size: 24px;
+  margin: 10px;
+}
+.t5En {
+  font-size: 20px;
+}
+
+/* 顏色 */
+.colorDefault {
+  color: default;
+}
+.colorDark {
+  color: dark;
+}
+.colorAccent {
+  color: accent;
+}
+.colorGary1 {
+  color: gary1;
+}
+.colorGary2 {
+  color: gary2;
+}
+.colorBlack {
+  color: black;
+}
+
+/* 字體 */
+
+
+/* ----------------個別-------------- */
+
+.main {
+  display: flex;
+  justify-content: center;
+  /* width: 80%; */
+}
+
+.mapSection {
+  display: flex;
+  justify-content: center;
+  /* width: 80%; */
+  background-color: brown;
+}
+
+.mapKey {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blueviolet; */
+}
+
+/* sectionA：上方課程資訊 區塊 */
+.sectionA {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  /* background-color: blanchedalmond; */
+}
+.detailPhoto {
+  /* width: 690px; */
+  /* height: 820px; */
+  /* border-radius: 10px; */
+  /* object-fit: cover; */
+  /* background-color: aqua; */
+}
+.coursePhotos {
+  
+}
+.cardPhoto {
+  border-radius: 20px;
+  margin: 8px;
+  object-fit: cover;
+}
+.twoPhotos {
+  display: flex;
+  justify-content: space-between;
+}
+.leftPhoto {
+
+}
+.rightPhoto {
+
+}
+
+.carousel {
+  width: 690px;
+  width: 45%;
+  height: 820px;
+  border-radius: 10px;
+  /* object-fit: cover; */
+  background-color: rgb(157, 189, 181);
+  margin: 0 60px;
+}
+.intro {
+  width: 45%;
+  margin: 0 80px;
+  /* background-color: aqua; */
+}
+.courseName {
+  margin-bottom: 40px;
+}
+.courseIntro {
+  margin-bottom: 120px;
+}
+.attention {
+  margin-bottom: 60px;
+}
+/* .intro div{
+  margin: 40px 0;
+} */
+.cateIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 72px;
+  height: 36px;
+  border: 2px solid default;
+  border-radius: 3px;
+
+  margin-bottom: 40px;
+  /* margin-top: 0; */
+}
+/* 詳細資訊 */
+.info {
+  margin-bottom: 60px;
+}
+.dateAndTime {
+  display: flex;
+  margin-bottom: 30px;
+}
+.date {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-right: 40px;
+  /* background-color: aquamarine; */
+}
+/* info的Icon樣式 */
+.infoIconStyle {
+  font-size: 24px;
+  color: default;
+  margin-right: 10px;
+}
+.time {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: blue; */
+}
+.location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.peopleCount {
+  display: flex;
+  align-items: center;
+}
+.stillPeople {
+  display: flex;
+  align-items: center;
+}
+.totalPeople {
+  display: flex;
+  align-items: center;
+}
+/* 價格 & 收藏按鈕 */
+.priceAndFavicon {
+  display: flex;
+  justify-content: space-between;
+}
+.moneyIconAndPrice {
+  display: flex;
+  margin-bottom: 40px;
+}
+.favicon {
+  font-size: 34px;
+  color: default;
+}
+/* 加入購物車按鈕 & 直接購買按鈕 */
+.cartButtonAndBuyButton {
+  display: flex;
+  margin-bottom: 40px;
+}
+.cartButton {
+  margin-right: 40px;
+}
+.cartButton > button {
+  background-color: white;
+  color:#80999C;
+}
+.cartButtonTwo {
+
+}
+.buyButton {
+
+}
+/* share */
+.shareIcons {
+  display: flex;
+  font-size: 28px;
+}
+.shareIconsMargin {
+  margin-right: 15px;
+  color: default;
+}
+.copyLink {
+  display: flex;
+}
+
+
+
+/* sectionＢ：中間文字區 區塊 */
+.sectionB {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  width: 80%;
+  margin-top: 80px;
+  /* background-color: rgb(255, 247, 0); */
+}
+/* 課程資訊（時間+地點） */
+.courseInfomationUL div {
+  display: flex;
+}
+.courseInfomationUL li {
+  list-style: none;
+  line-height: 28px;
+}
+/* 課程介紹（課程技巧+內容） */
+.courseIntroduceUL {
+  margin-bottom: 20px;
+  line-height: 28px;
+}
+.courseIntroduceUL li {
+  list-style: none;
+  line-height: 28px;
+}
+.coursePhoto {
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 800px;
+  height: 600px;
+  object-fit: cover;
+}
+/* 教學單位／講師介紹 */
+.organizeAndTeacherSection {
+  
+}
+.teacherAndComment {
+  /* display: flex; */
+  background-color: light;
+  padding: 80px;
+  border-radius: 20px;
+}
+/* 使用者評價 */
+.comment {
+  margin-top: 80px;
+  margin-left: 190px;
+}
+.commentPhotoAndText {
+  display: flex;
+  margin-top: 40px;
+}
+.userPhoto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+.commentTextSection {
+
+}
+.userNameAndCreateDate {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.userName {
+  color: default;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.studentCourseName {
+  margin-right: 30px;
+  /* color: blueviolet; */
+}
+.userStars {
+  margin-bottom: 10px;
+}
+.userStar {
+  font-size: 22px;
+  color: default;
+}
+.userCommentText {
+  line-height: 28px;
+}
+
+
+/* 注意事項（Q&A） */
+.notice {
+  margin-bottom: 100px;
+}
+.notice li {
+  margin-left: 25px;
+  line-height: 28px;
+}
+
+
+
+/* sectionC：下方猜你可能喜歡 區塊 */
+.sectionC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 100px;
+  background-color: light;
+}
+.maybeLike {
+  font-size: 28px;
+  color: default;
+  margin: 0 0 60px;
+}

@@ -1,0 +1,48 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+
+
+.cateButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 25px;
+}
+
+.cateButton:hover .cateButtonCircle {
+  background-color: white;
+}
+
+.cateButtonCircle {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: default;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  margin: 0 0 15px;
+}
+
+.cateButtonIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+}
+
+.cateButton:hover .cateButtonIcon {
+  color: default;
+}
+
+.cateButtonText {
+  color: dark;
+  font-size: 16px;
+  font-family: TC-Normal;
+  text-decoration: none;
+}

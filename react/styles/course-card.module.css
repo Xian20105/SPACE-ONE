@@ -1,0 +1,48 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+.cardPhoto {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+
+  margin: 0 0 15px;
+}
+
+.dateAndFavicon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 0 15px;
+}
+
+.iconAndDateAndWeek {
+  display: flex;
+  align-items: center;
+  color: dark;
+  font-size: 22px;
+}
+
+.date {
+  margin-left: 6px;
+}
+
+.p3 {
+  color: black;
+  font-size: 24px;
+
+  margin: 0 0 15px;
+}
+
+.moneyIconAndPrice {
+  display: flex;
+  
+}
+
+.t2En {
+  color: default;
+  color: dark;
+  font-size: 26px;
+}

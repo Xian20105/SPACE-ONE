@@ -1,0 +1,125 @@
+.main{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+.listSection{
+  max-width:1320px;
+  display:flex;
+  justify-content: space-between;
+  margin:60px;
+  gap:80px;
+}
+.categories{ 
+  display: flex;
+  width: 150px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  text-aline: center;
+}
+
+.right{
+  width:1005px;
+  height:max-content;
+}
+.searchContainer{
+  display: flex;
+  justify-content: space-between;
+  max-width:1320px;
+  height:40px;
+  margin-bottom:20px;
+}
+
+.cardContainer{
+  max-width:1005px;
+  list-style:none;
+  padding:0px;
+  display: flex;
+  gap:35px;
+  row-gap: 60px;
+  flex-wrap: wrap;
+  margin-top:0px;
+}
+
+.productCard{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.productIMG{
+  border-radius: 10px;
+  align-self: stretch;
+  margin-bottom:10px;
+}
+.productText{
+  word-wrap:break-word;
+  height: 100%;
+  align-self: stretch;
+  overflow: hidden;
+  color: var(--black, #333);
+  text-overflow: ellipsis;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  width:225px;
+  gap:20px;
+}
+.productContent{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+}
+.productIcon{
+  width:225px;
+  display: flex;
+  justify-content:space-between;
+}
+.selectContainer{
+  width:100%;
+  font-size: 14px;
+  padding:5px 0px;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #80999C;
+  background-color: #FAFBFC;
+}
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+  gap:5px;
+  padding: 50px;
+  align-items: center;
+  font-size: 16px;
+  color: #80999C;
+}
+.buttonContainer > button{
+  min-width:0;
+  margin:5px;
+  padding:10px;
+  background-color: #FAFBFC;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid var(--green, #80999C);
+  color: var(--green, #80999C);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#currentPage {
+  /* 在這裡定義當前頁碼的背景顏色或其他樣式 */
+  background-color: #80999C; /* 以 #abcdef 為例，你可以根據需要更改背景顏色 */
+  color:#FAFBFC;
+}

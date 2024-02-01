@@ -1,0 +1,47 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+.container{
+  display: flex;
+  flex-direction: column;
+  color: default;
+  gap: 40px;
+}
+
+.img{
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.price{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  font-family: EN-Normal;
+  color: default;
+}
+
+
+
+@media (max-width: 540px) {
+  .container{
+    width: 80%;
+    margin: 30px auto;
+    gap: 20px;
+  }
+
+  .img{
+    width: 100%;
+  }
+
+  .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: EN-Normal;
+    color: default;
+  }
+  
+}

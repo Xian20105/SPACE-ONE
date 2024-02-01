@@ -1,0 +1,60 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+.courseCartList {
+  /* background-color: aquamarine; */
+  width: 1250px;
+  /* width: 100%; */
+
+}
+
+.courseCartListItem {
+  /* background-color: rgb(142, 255, 127); */
+  width: 100%;
+}
+
+.textSection {
+  /* background-color: rgb(255, 214, 127); */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.coursePhoto {
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-right: 40px;
+}
+
+.NameAndPrice {
+  /* background-color: aqua; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.courseName {
+  font-size: 22px;
+  color: dark;
+}
+
+.coursePrice {
+  font-size: 20px;
+  font-family: DIN Next W1G;
+}
+
+.removeButton {
+  margin-left: 40px;
+}
+
+.removeButton > button {
+  width: 50px;
+  background-color: white;
+  border: 2px solid white;
+  color:gary1;
+}

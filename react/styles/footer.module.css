@@ -1,0 +1,78 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+.footer{
+  width: 100%;
+  background-color: default;
+  color: white;
+}
+
+.footer li{
+  list-style: none;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 40px 200px 0px;
+}
+
+.logo{
+  margin-bottom: 20px;
+}
+
+.logo_mobile {
+  display: none;
+}
+
+.info{
+
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.title{
+  font-size: 24px;
+  font-family: EN-Normal;
+}
+
+.copyright{
+  font-size: 12px;
+  font-family: TC-Regular;
+  text-align: center;
+  background-color: default;
+  color: white;
+  padding: 30px 60px 20px;
+}
+
+
+@media (max-width: 540px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 15px 0px;
+  }
+  .content {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .logo_mobile {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .title{
+    display: none;
+  }
+.copyright{
+  padding: 20px 60px 10px;
+}
+}

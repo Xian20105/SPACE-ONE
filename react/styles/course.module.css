@@ -1,0 +1,122 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+/* ---------------全域--------------- */
+.main {
+  
+}
+.container {
+  margin: 0 150px;
+}
+/* 標題 */
+.t2En {
+  font-size: 30px;
+}
+.p5 {
+  font-size: 20px;
+}
+/* 顏色 */
+.colorDefault {
+  color: default;
+}
+/* 字體 */
+
+
+/* ----------------個別-------------- */
+/* 換圖輪播區塊 */
+.courseListCarousel {
+  margin-top: 70px;
+}
+/* 課程類別 */
+.cateButtonSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  min-height: 300px;
+  background-color: light;
+  /* margin-top: 60px; */
+}
+.cate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 主要內容區塊 */
+/* 大標 & 搜尋 & 排序 & tabBar */
+.main {
+  background-color: white;
+  margin-top: 80px;
+}
+.container {
+  /* padding: 150px 0; */
+}
+
+.titleSection {
+  height: 250px;
+  /* background-color: rgb(229, 189, 245); */
+  
+}
+
+.bigTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  margin: 100px 0 0;
+}
+.searchAndSort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+.searchAndSort input {
+  width: 400px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.tabBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 50px;
+}
+.tabBar div {
+  margin: 0 40px;
+}
+
+/* 課程卡片們 */
+.cardSection {
+  /* display: flex; */
+  /* flex-direction: row; */
+
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
+
+  /* background-color: aqua; */
+  /* width: 80%; */
+}
+
+.cards {
+  /* display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; */
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* min-width:100%; */
+  width: 100%;
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(4,1fr);
+  /* background-color: rgb(243, 139, 255); */
+}
+
+.card {
+  width: 250px;
+  margin: 0 40px 60px;
+  /* background-color: rgb(255, 0, 0); */
+}

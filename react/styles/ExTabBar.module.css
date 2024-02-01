@@ -1,0 +1,22 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+.ExTabBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: dark;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.ExTabBar:hover {
+  border-bottom: 2px solid default;
+}
+
+.ExTabBar:focus {
+  border-bottom: 2px solid default;
+}

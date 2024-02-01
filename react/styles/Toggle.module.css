@@ -1,0 +1,24 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+.tabBarContainer {
+  width: 100%;
+  padding: 20px 60px;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: sticky;
+  background-color: white;
+
+}
+
+.tabBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+}
+.tabBar li {
+  margin: 0 40px;
+}

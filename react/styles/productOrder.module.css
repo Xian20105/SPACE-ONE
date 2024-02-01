@@ -1,0 +1,352 @@
+.main{
+  display: flex;
+  gap:60px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+.listSection{
+  width:100%;
+  padding:0px 260px;
+  gap:20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.progressBar{
+  display: flex;
+  width: 80%;
+  height: 38px;
+  padding: 60px 180px;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: var(--green, #80999C);
+  text-align: center;
+  font-family: Taipei Sans TC Beta;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+}
+.progress1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.progress2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.progress3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color:#F47619;
+}
+.progressNumber1{
+  display: flex;
+  width: 24px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid var(--orange, #80999C);
+}
+.progressNumber2{
+  display: flex;
+  width: 24px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid var(--orange, #80999C);
+}
+.progressNumber3{
+  display: flex;
+  width: 24px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid var(--orange, #F47619);
+}
+.listSection > p{
+  width:100%;
+  color: var(--green, #80999C);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Section1{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+  border: 1px solid rgba(113, 112, 113, 0.30);
+}
+.Section1 > div{
+  width:100%;
+  display: flex;
+  padding: 21px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.Section2{
+  width:100%;
+  border: 1px solid rgba(113, 112, 113, 0.30);
+}
+.Section3{
+  background-color: #F2F5F5;
+  display: flex;
+  padding: 25px 20px;
+  flex-direction: column;
+  gap: 15px;
+  align-self: stretch;
+}
+.orderInfo{
+  display: flex;
+  padding: 21px 30px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+.orderText{
+  color: var(--gray-1, #717071);
+  font-family: Taipei Sans TC Beta;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.orderTotal{
+  color: var(--orange, #F47619);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+.orderTitle{
+  display: flex;
+  padding: 25px 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  border-bottom: 1px solid rgba(113, 112, 113, 0.30);
+}
+
+.orderTitle2{
+  width: 20%;
+  color: var(--black, #333);
+  text-align: start;
+  font-family: Taipei Sans TC Beta;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.orderTitle3{
+  width: 20%;
+  color: var(--black, #333);
+  font-family: Taipei Sans TC Beta;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.orderTitle4{
+  width: 20%;
+  color: var(--black, #333);
+  text-align: center;
+  font-family: Taipei Sans TC Beta;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.orderTitle5{
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  color: var(--black, #333);
+  text-align: start;
+  font-family: Taipei Sans TC Beta;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.orderTitle6{
+  width: 20%;
+  color: var(--black, #333);
+  text-align: end;
+  font-family: Taipei Sans TC Beta;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.productText{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  padding: 10px 10px;
+}
+.productText2{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.photoContainer{
+  width:20%;
+  text-align: start;
+}
+.photo{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  padding: 21px 22px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 10px;
+  background: var(--gray-2, #DDD);
+}
+.productInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.productName{
+  display: flex;
+  width:20%;
+  height: 40px;
+  overflow: hidden;
+  color: var(--black, #333);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Taipei Sans TC Beta;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 32px;
+}
+.productDesc{
+  width:20%;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--black, #333);
+  text-overflow: ellipsis;
+  font-family: Tahoma;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.productPrice{
+  width:20%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+  color:#80999C;
+  font-size: 20px;
+}
+.productQuantity{
+  width:20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  color:#80999C;
+  font-size: 20px;
+  white-space: nowrap;
+}
+.productSubtotal{
+width:20%;
+overflow: hidden;
+color: var(--green, #80999C);
+text-overflow: ellipsis;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-align: end;
+white-space: nowrap;
+}
+.productSpec{
+  color: var(--black, #333);
+  font-family: Tahoma;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.details{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0px;
+  align-items: flex-start;
+  align-self: stretch;
+  border-bottom: 1px solid rgba(113, 112, 113, 0.30);
+}
+.details > div{
+  color: #000;
+  font-family: Tahoma;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.detailsContent{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0px;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.detailsContent1 > div{
+  color: var(--gray-1, #717071);
+  font-family: Tahoma;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.detailsContent4{
+  color: var(--gray-1, #F47619);
+  font-family: Tahoma;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  gap:30px;
+}
+.buttonContainer > button{
+    width:233px;
+    background-color: white;
+    color:#80999C;
+    margin:30px;
+}

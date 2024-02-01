@@ -1,0 +1,143 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+.main{
+  display: flex;
+  gap:60px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+.Order{
+  font-size: 28px;
+  font-weight: 800;
+  margin: 30px 30px;
+}
+.OrderSection{
+  width: 80%;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+
+  background-color: light;
+  padding: 40px 120px 80px;
+  border-radius: 20px;
+  margin-bottom: 60px;
+}
+.mapKey {
+
+}
+.mapKey:last-child hr {
+  border:2px solid transparent;
+}
+.updateTimeAndTotalPrice {
+  
+}
+.updateTime {
+  font-size: 20px;
+  margin-top: 80px;
+  /* border-top: 2px solid red; */
+}
+
+.totalPrice {
+  display: flex;
+  margin-bottom: 30px;
+}
+.title {
+  font-size: 20px;
+}
+.price {
+  font-size: 28px;
+  color: accent;
+  font-family: DIN Next W1G;
+  font-style: normal;
+  font-weight: 500;
+}
+/* 購買明細 */
+.shoppingDetail {
+  
+}
+.shoppingDetail hr {
+  margin-top: 60px;
+}
+/* 評價講師 button */
+.teacherButton {
+
+}
+.teacherButton > button {
+  margin-left: 40px;
+}
+
+/* 卡片內容 */
+.courseCartList {
+  /* background-color: aquamarine; */
+  width: 1250px;
+  /* width: 100%; */
+
+}
+
+.courseCartListItem {
+  /* background-color: rgb(142, 255, 127); */
+  width: 100%;
+}
+
+.textSection {
+  /* background-color: rgb(255, 214, 127); */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.coursePhoto {
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-right: 40px;
+}
+
+.NameAndPrice {
+  /* background-color: aqua; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.courseName {
+  font-size: 22px;
+  color: dark;
+}
+
+.coursePrice {
+  font-size: 20px;
+  font-family: DIN Next W1G;
+}
+
+.removeButton {
+  margin-left: 40px;
+}
+
+.removeButton > button {
+  width: 50px;
+  background-color: white;
+  border: 2px solid white;
+  color:gary1;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.buttonContainer > button{
+  width:233px;
+  background-color: white;
+  color:#80999C;
+}

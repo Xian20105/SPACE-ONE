@@ -1,0 +1,46 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+.card {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.people {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: white;
+  background: gary1;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.image{
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.first{
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 20px;
+  text-overflow: ellipsis;
+}
+
+.near{
+  color: gary1;
+}
+
+.price {
+  font-size: 20px;
+  /* font-family: EN-Normal; */
+  color: default;
+}

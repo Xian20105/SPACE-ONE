@@ -1,0 +1,50 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+.container {
+  user-select: none;
+}
+
+.title {
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  color: default;
+  font-size: 18px;
+}
+
+.title div {
+  text-align: center;
+}
+
+.week{
+  color:gary1;
+  font-family: TC-Bold;
+}
+
+.week_column{
+  padding: 10px;
+}
+
+.date_column{
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+}
+
+.past_date{
+  padding: 5px;
+  text-align: center;
+  color: gary2;
+}
+
+.today{
+  color: accent;
+}
+
+.select_date{
+  color: white;
+  background: default;
+  border-radius: 5px;
+}

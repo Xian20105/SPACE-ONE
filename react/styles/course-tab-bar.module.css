@@ -1,0 +1,19 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+.courseTabBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
+  color: default;
+  text-decoration: none;
+
+  padding: 10px 50px;
+  margin: 0 8px;
+}
+
+.courseTabBar:hover {
+  border-bottom: 2px solid default;
+}

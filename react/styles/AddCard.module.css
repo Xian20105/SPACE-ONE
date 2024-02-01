@@ -1,0 +1,57 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+.addCardContainer {
+    display: flex;
+  height: 533px;
+  padding: 30px 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-shrink: 0;
+  }
+  .textGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .addCardText {
+    width: 225px;
+  height: 48px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 20px;
+  color: dark;
+  }
+  .alreadyPrice {
+    font-size: 28px;
+    color: dark;
+  }
+  .sponsor {
+  width: 120px;
+  height: 28px;
+  border-radius: 20px;
+  background: gary2;
+  color: gary1;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .sponsorContent  {
+    width: 250px;
+    height: 100px;
+    color: gary1;
+    font-size: 18px;
+  }
+  .cardButton button {
+    width: 250px;
+    height: 28px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

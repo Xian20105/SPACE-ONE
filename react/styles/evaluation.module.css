@@ -1,0 +1,63 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+.evaluationSection{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0 60px;
+}
+.bigTitle{
+  font-size: 28px;
+  font-weight: 800;
+  margin: 30px 30px;
+}
+.titleText {
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+/* 填寫區 */
+.writeSection {
+  display: flex;
+  flex-direction: column;
+}
+.smallTitle {
+  font-size: 18px;
+  color: white;
+  margin: 60px 0 20px;
+}
+.textSection {
+  height: 223px;
+  border: 1px solid default;
+  border-radius: 10px;
+
+  font-size:18px;
+  color: dark;
+  padding: 30px;
+}
+.writeSection > textarea {
+  caret-color: auto; /* 預設 */
+  caret-color: transparent; /* 透明 */
+  caret-color: dark; /* 指定色 */
+  outline: none; /* 外框效果 */
+}
+.writeSectionTable {
+  display: flex;
+  flex-direction: column;
+}
+
+.twoButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.twoButtons > button {
+  margin: 0 30px;
+}
+.twoButtons > button:first-child {
+  background-color: white;
+  color:#80999C;
+}
+

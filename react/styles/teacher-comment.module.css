@@ -1,0 +1,112 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+/* ---------------全部--------------- */
+.main {
+  
+}
+/* 標題 */
+.t2En {
+  font-size: 30px;
+}
+.p4 {
+  font-size: 24px;
+}
+.p5 {
+  font-size: 20px;
+}
+.p6 {
+  font-size: 16px;
+  line-height: 28px;
+}
+.h2 {
+  font-size: 32px;
+}
+.h3 {
+  font-size: 28px;
+  margin: 120px 0 40px;
+}
+.h4 {
+  font-size: 24px;
+}
+.h5 {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.t2En {
+  font-size: 36px;
+}
+.t4En {
+  font-size: 24px;
+  margin: 10px;
+}
+.t5En {
+  font-size: 20px;
+}
+
+/* 顏色 */
+.colorDefault {
+  color: default;
+}
+.colorDark {
+  color: dark;
+}
+.colorAccent {
+  color: accent;
+}
+.colorGary1 {
+  color: gary1;
+}
+.colorGary2 {
+  color: gary2;
+}
+.colorBlack {
+  color: black;
+}
+
+/* 字體 */
+
+
+/* ----------------個別-------------- */
+
+
+/* 講師 */
+.teacher {
+  display: flex;
+}
+.teacherPhoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 40px;
+  object-fit: cover;
+}
+.textSection {
+
+}
+.teacherSection {
+
+}
+.teacherInfo {
+
+}
+.teacherNameAndStar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.teacherName {
+  color: dark;
+  margin-right: 20px;
+}
+.teacherStars {
+
+}
+
+.teacherIntro {
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+
+

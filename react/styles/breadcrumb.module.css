@@ -1,0 +1,21 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+.container{
+  display: block;
+  padding: 0 60px;
+}
+
+.label{
+  display: inline-flex;
+  align-items: center;
+  color: default;
+}
+
+@media (max-width: 540px) {
+  .container{
+    display: none;
+  }
+  
+
+}

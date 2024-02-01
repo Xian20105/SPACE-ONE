@@ -1,0 +1,66 @@
+@value styles: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from styles;
+
+.submenu{
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  gap: 15px;
+}
+
+.menu{
+  padding: 0 50px;
+}
+
+.menuitem{
+  display: flex;
+  align-items: center;
+  height: 60px;
+  font-size: 16px;
+  color: black;
+  border-bottom: 1px solid default;
+  padding: 7px 0;
+}
+
+.menuitem:hover{
+  color: accent;
+}
+
+.cart{
+  margin-right: 20px;
+}
+
+.nickname {
+  color: default;
+  margin-right: 20px;
+}
+
+.login{
+  min-width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+  background-color: white;
+  color: default;
+  border: 2px solid default;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: TC-Normal;
+  cursor: pointer;
+}
+
+.login:hover {
+  opacity: 100%;
+  color: white;
+  background-color: default;
+}
+
+
+@media (max-width: 540px) {
+  .submenu{
+    display: none;
+  }
+}

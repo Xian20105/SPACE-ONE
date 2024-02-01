@@ -1,0 +1,100 @@
+@value style: "./styles.module.css";
+@value default, dark, light, accent, gary1, gary2, black, white from style;
+
+/* .kv {
+  display: flex;
+  padding-bottom: 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background-color: #fafbfc;
+} */
+.breadcrumbs {
+  width: 100%;
+}
+
+/* 募資區域 */
+.section1 {
+  display: flex;
+  padding: 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background-color: white;
+}
+.title1 {
+  display: flex;
+  width: 100%;
+  padding: 60px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titleGroup {
+  display: flex;
+flex-direction: column;
+align-items: center;
+gap: 6px;
+}
+.CFtitle {
+  font-size: 36px;
+  color: default;
+}
+.CFsubtitle {
+  font-size: 20px;
+  color: black;
+}
+.CFgroup {
+  display: flex;
+  width: 100%;
+  padding: 60px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 60px 40px;
+  flex-wrap: wrap;
+}
+
+/*展覽(最新）消息*/
+.section2 {
+  display: flex;
+  padding: 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  align-self: stretch;
+  background: light;
+}
+.ExTitle {
+  font-size: 36px;
+  color: default;
+}
+
+.ExCardTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ExSubtitle {
+  font-size: 20px;
+  color: black;
+}
+.title2 {
+  display: flex;
+  padding: 60px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.ExCardGroup {
+  display: flex;
+  padding: 30px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
