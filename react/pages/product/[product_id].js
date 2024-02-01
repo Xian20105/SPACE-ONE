@@ -1,3 +1,4 @@
+import React from 'react';
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { AB_GET_ONE } from '@/components/my-const'
@@ -213,7 +214,14 @@ export default function ABEdit() {
               <div className={styles.infoTitle}>
                 <h3 style={{ color: '#80999C' }}>商品詳情</h3>
               </div>
-              <div className={styles.content}>{data.desc}</div>
+              <div className={styles.content}>
+                  {data.desc.split('\n').map((line, index) => (
+                    <React.Fragment key={index}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  ))}
+                </div>
               {/* <div className={styles.infoText}>
                 <h3 style={{ color: '#80999C' }}>規格資訊</h3>
               </div>
@@ -223,7 +231,14 @@ export default function ABEdit() {
               <div className={styles.infoTitle}>
                 <h3 style={{ color: '#80999C' }}>規格資訊</h3>
               </div>
-              <div className={styles.content}>{data.spec_info}</div>
+              <div className={styles.content}>
+                  {data.spec_info.split('\n').map((line, index) => (
+                    <React.Fragment key={index}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  ))}
+                </div>
               {/* <div className={styles.infoText}>
                 <h3 style={{ color: '#80999C' }}>相關產品</h3>
               </div> */}
