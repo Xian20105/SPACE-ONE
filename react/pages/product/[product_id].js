@@ -6,8 +6,6 @@ import Footer from '@/components/layout/footer.js'
 import Header from '@/components/layout/header.js'
 import styles from '@/styles/productInfo.module.css'
 import Carousel from '@/components/layout/product/carousel'
-import { useProductCart } from '@/hooks/use-productCart.js'
-import CarouselCard from '@/components/layout/product/carouselCard'
 import { FaLine, FaXTwitter } from 'react-icons/fa6'
 import {
   BiLogoFacebookCircle,
@@ -15,6 +13,7 @@ import {
   BiChevronDown,
 } from 'react-icons/bi'
 import Swal from 'sweetalert2'
+// import { useProductCart } from '@/hooks/use-productCart.js'
 
 export default function ABEdit() {
   const router = useRouter()
@@ -33,7 +32,6 @@ export default function ABEdit() {
   const [qty, setQty] = useState(1)
   const [productPhotos, setProductPhotos] = useState([])
 
-  // 移到這裡
   const handleOptionSelect = (option) => {
     setSelectedOption(option)
     localStorage.setItem('selectedOption', option)
@@ -122,7 +120,7 @@ export default function ABEdit() {
       return // 跳出函式，接下來的程式不執行
     }
 
-    // 以下是如果沒找到的話
+    // 如果沒找到的話
     // 原本的商品資料物件中沒有數量(qty)，所以要加入 qty
     const newItem = {
       ...item,

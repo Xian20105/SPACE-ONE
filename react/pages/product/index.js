@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { AB_LIST } from '@/components/my-const';
 import { useRouter } from 'next/router';
 import Footer from '@/components/layout/footer.js';
@@ -65,7 +65,6 @@ export default function ProductList() {
     // 更新前端資料
     setData(result);
   
-    // 其他你可能需要的邏輯，例如處理分頁等
   };
   
 
