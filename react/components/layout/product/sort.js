@@ -25,7 +25,6 @@ export default function Sort({ onSortChange }) {
         <option value="">選擇排序</option>
         <option value="price_asc">最低價格</option>
         <option value="price_desc">最高價格</option>
-        {/* 可根據需要添加更多的選項 */}
       </select>
     </div>
   );

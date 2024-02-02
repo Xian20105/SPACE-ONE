@@ -75,7 +75,6 @@ const ProductCard = ({ product }) => {
     // 將更新後的購物車項目再次存儲到 localStorage 中
     localStorage.setItem('cart', JSON.stringify(storedItems))
 
-    // 可選：顯示通知或執行其他操作
     Swal.fire({
       toast: true,
       width: 330,

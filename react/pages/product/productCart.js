@@ -6,9 +6,9 @@ import CartList from '@/components/layout/product/cart/cart-list'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import { useProductCart } from '@/hooks/use-productCart'
-import { BiCheckbox, BiPlusCircle, BiMinusCircle } from 'react-icons/bi'
+import { BiPlusCircle, BiMinusCircle } from 'react-icons/bi'
 import Swal from 'sweetalert2'
+// import { useProductCart } from '@/hooks/use-productCart'
 
 export default function ProductCart() {
   const [cartItems, setCartItems] = useState([])

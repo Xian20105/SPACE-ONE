@@ -60,7 +60,7 @@ export default function PurchaseInfo() {
     const storedSelectedPayment = localStorage.getItem('paymentMethod');
   setSelectedPayment(storedSelectedPayment);
 
-  console.log("Selected Payment:", storedSelectedPayment); // 確保這行正確顯示值
+  console.log("Selected Payment:", storedSelectedPayment); 
   }, [])
 
   return (
