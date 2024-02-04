@@ -86,14 +86,14 @@ export default function ProductList() {
           </div>
           <div className={styles.right}>
             <div className={styles.searchContainer}>
-              <div>
+              <div className={styles.searchContainer2}>
               <Search
                   onSearch={handleSearch}
                   className={styles.search2}
                   aria-label="執行搜尋"
                 />
               </div>
-              <div>
+              <div className={styles.sortContainer}>
               <Sort onSortChange={handleSortChange} />
               </div>
             </div>

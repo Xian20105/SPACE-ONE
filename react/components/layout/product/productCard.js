@@ -94,10 +94,8 @@ const ProductCard = ({ product }) => {
           <a className={styles.productText}>
             <div className={styles.productIMG}>
               {/* 如果product_photo有多張照片 => product.product_photo.split(',')[0] */}
-              <img
+              <img className={styles.img}
                 src={`/product/${product.product_photo.split(',')[0]}`}
-                width={225}
-                height={225}
                 alt={product.product_name}
                 style={{ borderRadius: 10 }}
               />
@@ -119,7 +117,7 @@ const ProductCard = ({ product }) => {
         </select>
 
         <div className={styles.productIcon}>
-          <div style={{ color: '#487378', fontSize: '24px' }}>
+          <div style={{ color: '#487378', fontSize: '24px' }} className={styles.productIcon2}>
             ${product.price}
           </div>
           <div>
