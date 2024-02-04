@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '@/styles/productSearch.module.css';
+import styles from '@/styles/productList.module.css';
 import { BiSearch } from 'react-icons/bi';
 
 const Search = ({ onSearch }) => {

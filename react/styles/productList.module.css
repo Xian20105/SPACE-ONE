@@ -12,12 +12,11 @@
 }
 .categories{ 
   display: flex;
-  width: 150px;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 15px;
-  text-aline: center;
 }
 
 .right{
@@ -31,18 +30,20 @@
   height:40px;
   margin-bottom:20px;
 }
-
 .cardContainer{
   max-width:1005px;
   list-style:none;
   padding:0px;
   display: flex;
+  justify-content: center;
   gap:35px;
   row-gap: 60px;
   flex-wrap: wrap;
   margin-top:0px;
 }
-
+.H1{
+  font-size: 22px;
+  }
 .productCard{
   display: flex;
   width: 100%;
@@ -55,6 +56,10 @@
   border-radius: 10px;
   align-self: stretch;
   margin-bottom:10px;
+}
+.img{
+  width:225px;
+  height: 225px;
 }
 .productText{
   word-wrap:break-word;
@@ -119,7 +124,282 @@
   line-height: normal;
 }
 #currentPage {
-  /* 在這裡定義當前頁碼的背景顏色或其他樣式 */
-  background-color: #80999C; /* 以 #abcdef 為例，你可以根據需要更改背景顏色 */
+  /* 當前頁碼的背景顏色或其他樣式 */
+  background-color: #80999C; 
   color:#FAFBFC;
+}
+.ul{
+  width:100%;
+}
+.category{
+    min-width:160px;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    justify-content: start;
+    background-color: #F2F5F5;
+    color: #80999C;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 2px 2px 1px #DDDDDD;
+  }
+  .categoryContainer > button{
+    margin:2px 0px;
+  }
+  .sortB{
+    color: var(--green, #80999C);
+    font-family: Tahoma;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+  }
+  .sortA > select{
+    background-color:#fafbfc;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 0;
+    border:0;
+    border-bottom: 1px solid var(--green, #80999C);
+  }
+  .search{
+    width:100%;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    flex-shrink: 0;
+    color: var(--green, #80999C);
+    font-family: Tahoma;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin:0;
+    position: relative;
+  }
+  .search2{
+    position: absolute;
+    left: 90%;
+  }
+/*手機板---------------------------------------------------------------------*/
+@media screen and (max-width: 375px) {
+  .main{
+    display: flex;
+    justify-content: center;
+  }
+  .listSection{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    margin:0px;
+    gap:20px;
+  }
+  .categories{ 
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .categoryH1{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .H1{
+  font-size: 22px;
+  }
+  .categoryContainer{
+    width:100%;
+  }
+  .categoryContainer > button{
+    margin:2px 0px;
+  }
+  .ul{
+    width:100%;
+    }
+  .category{
+    width:100%;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    justify-content: center;
+    background-color: #F2F5F5;
+    color: #80999C;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    border-radius: 0;
+    box-shadow: 0px 1px 0px #DDDDDD;
+    }
+  .right{
+    width:100%;
+    height:max-content;
+  }
+  .sortContainer{
+    width: 100%;
+  }
+  .sortB{
+    color: var(--green, #80999C);
+    font-family: Tahoma;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+  }
+ 
+  .sortA{
+    width: 100%;
+    background-color:#fafbfc;
+    height: 40px;
+    padding: 0px 10px;
+    border-radius: 0;
+    border:0;
+    border-bottom: 1px solid var(--green, #80999C);
+  }
+  
+  .searchContainer{
+    display: flex;
+    gap:20px;
+    justify-content: space-between;
+    max-width:1320px;
+    height:40px;
+    margin-bottom:20px;
+  }
+  .searchContainer2{
+    width:100%;
+  }
+  .search{
+    width:100%;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    flex-shrink: 0;
+    color: var(--green, #80999C);
+    font-family: Tahoma;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin:0;
+    position: relative;
+  }
+  .search2{
+    position: absolute;
+    left: 90%;
+  }
+  .cardContainer{
+    max-width:1005px;
+    list-style:none;
+    padding:0px;
+    display: flex;
+    gap:35px;
+    row-gap: 60px;
+    flex-wrap: wrap;
+    margin-top:0px;
+  }
+  
+  .productCard{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .productIMG{
+    border-radius: 10px;
+    align-self: stretch;
+    margin-bottom:10px;
+  }
+  .img{
+    width:225px;
+    height: 225px;
+  }
+  .productText{
+    word-wrap:break-word;
+    height: 100%;
+    align-self: stretch;
+    overflow: hidden;
+    color: var(--black, #333);
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    width:225px;
+    gap:20px;
+  }
+  .productContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+  }
+  .productIcon{
+    width:225px;
+    display: flex;
+    justify-content:space-between;
+  }
+  .selectContainer{
+    width:100%;
+    font-size: 14px;
+    padding:5px 0px;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #80999C;
+    background-color: #FAFBFC;
+  }
+  .buttonContainer{
+    display: none;
+    justify-content: center;
+    gap:5px;
+    padding: 50px;
+    align-items: center;
+    font-size: 16px;
+    color: #80999C;
+  }
+  .buttonContainer > button{
+    min-width:0;
+    margin:5px;
+    padding:10px;
+    background-color: #FAFBFC;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid var(--green, #80999C);
+    color: var(--green, #80999C);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  #currentPage {
+    /* 當前頁碼的背景顏色或其他樣式 */
+    background-color: #80999C; 
+    color:#FAFBFC;
+  }
 }
