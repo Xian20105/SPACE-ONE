@@ -184,7 +184,10 @@ export default function ABEdit() {
       showConfirmButton: false,
       timer: 1500,
     });
+<<<<<<< HEAD
     router.push('/product/productCart')
+=======
+>>>>>>> Home
   };
 
   return (
