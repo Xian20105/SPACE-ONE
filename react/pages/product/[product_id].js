@@ -131,6 +131,61 @@ export default function ABEdit() {
     // 新增商品
     localStorage.setItem('cart', JSON.stringify([...storedItems, newItem]))
   }
+
+  const directPurchase = () => {
+    if (!selectedOption) {
+      // 如果沒有選擇規格，顯示警告訊息
+      Swal.fire({
+        toast: true,
+        width: 330,
+        position: 'top',
+        icon: 'error',
+        iconColor: '#ff804a',
+        title: '請選擇規格再進行直接購買！',
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      return;
+    }
+  
+    // 如果已選擇規格，則將產品資料新增到購物車中
+    const storedItems = JSON.parse(localStorage.getItem('cart')) || [];
+    const existingItemIndex = storedItems.findIndex(
+      (v) => v.product_id === data.product_id && v.spec === selectedOption
+    );
+  
+    if (existingItemIndex > -1) {
+      // 如果商品已存在於購物車中，只增加數量
+      storedItems[existingItemIndex].qty += 1;
+      storedItems[existingItemIndex].subtotal =
+        data.price * storedItems[existingItemIndex].qty; // 更新小計
+    } else {
+      // 否則將商品新增到購物車中
+      const newItem = {
+        ...data,
+        qty: 1,
+        subtotal: data.price,
+        spec: selectedOption,
+      };
+      storedItems.push(newItem);
+    }
+  
+    // 更新購物車資料
+    localStorage.setItem('cart', JSON.stringify(storedItems));
+  
+    // 顯示購買成功的提示訊息
+    Swal.fire({
+      toast: true,
+      width: 300,
+      position: 'top',
+      icon: 'success',
+      iconColor: '#ff804a',
+      title: `${data.product_name} 已加入購物車`,
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  };
+
   return (
     <>
       <Header />
@@ -180,7 +235,7 @@ export default function ABEdit() {
                 </div>
                 <button onClick={() => addItem(data)}>加入購物車</button>
                 <div className={styles.button2}>
-                  <button>直接購買</button>
+                <button onClick={directPurchase}>直接購買</button>
                 </div>
               </div>
               <div className={styles.text}>
