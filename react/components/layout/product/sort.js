@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import styles from '@/styles/productSort.module.css'
-import { BiDownArrowAlt,BiUpArrowAlt } from "react-icons/bi";
+import styles from '@/styles/productList.module.css'
 
 export default function Sort({ onSortChange }) {
   const [sortBy, setSortBy] = useState('');
