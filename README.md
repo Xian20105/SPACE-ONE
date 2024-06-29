@@ -1,5 +1,4 @@
 ![商品列表](https://github.com/Xian20105/SPACE-ONE/assets/147689002/4fa065e7-bb17-428f-b049-a27170a84b92)
-![商品列表2](https://github.com/Xian20105/SPACE-ONE/assets/147689002/92f90b80-ab85-4b6f-9dc0-569183aa835d)
 ![RWD](https://github.com/Xian20105/SPACE-ONE/assets/147689002/8d7ae348-7784-41b6-80a5-b9efeb8a186a)
 ![商品詳細頁](https://github.com/Xian20105/SPACE-ONE/assets/147689002/b3fab7aa-9636-4c3f-8223-36c6ffb45d01)
 ![購物車](https://github.com/Xian20105/SPACE-ONE/assets/147689002/bf884de8-0fe2-4cb5-9df7-99a5ed2b4c89)
